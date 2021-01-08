@@ -1,0 +1,2 @@
+
+        offset = offset % 26;
