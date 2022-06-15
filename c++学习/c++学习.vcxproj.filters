@@ -18,13 +18,7 @@
     <ClCompile Include="Box.cpp">
       <Filter>头文件</Filter>
     </ClCompile>
-    <ClCompile Include="Shape.cpp">
-      <Filter>头文件</Filter>
-    </ClCompile>
-    <ClCompile Include="printData.cpp">
-      <Filter>头文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Triangle.cpp">
+    <ClCompile Include="Adder.cpp">
       <Filter>头文件</Filter>
     </ClCompile>
   </ItemGroup>
