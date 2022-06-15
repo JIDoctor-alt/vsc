@@ -21,5 +21,20 @@
     <ClCompile Include="Adder.cpp">
       <Filter>头文件</Filter>
     </ClCompile>
+    <ClCompile Include="Boxdemo1.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="printData.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Shape.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Triangle.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="base.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
