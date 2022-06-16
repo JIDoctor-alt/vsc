@@ -36,5 +36,56 @@
     <ClCompile Include="base.cpp">
       <Filter>头文件</Filter>
     </ClCompile>
+    <ClCompile Include="fileop.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="division.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="defNewException.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pvalue.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="twoarray.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="namespacedemo1.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stddemo.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="嵌套namespace.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="templatedemo.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stackclassdemo.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="definedemo.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="defineDemo2.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="demo3.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="defdemo4.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="defdemo5.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="defdemo6.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
