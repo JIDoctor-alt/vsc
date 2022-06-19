@@ -31,12 +31,13 @@ public class QQView {
                 case "1":
                     System.out.print("请输入用户号： ");
                     String userId = Utility.readString(50);
-                    System.out.print("请输入密    码");
+                    System.out.print("请输入密    码:");
                     String pwd = Utility.readString(50);
+
                     //这里就比较麻烦了，需要到服务器验证是否合法
                     //这里有很多代码
                     if(userClientService.checkUser(userId,pwd)){
-                        System.out.println("===========欢迎（用户"+userId + ")===========");
+                        System.out.println("===========欢迎（用户"+userId + "    登录成功)===========");
                         //进入到二级菜单
                         while(loop){
                             System.out.println("\n=================网络通信系统二级菜单（用户"+userId+")==============");

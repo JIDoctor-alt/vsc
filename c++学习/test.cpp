@@ -1,35 +1,79 @@
 #include<iostream>
 #include<string>
-
+#include<vector>
 using namespace std;
 
 int main()
 {
+	int k;
+	cin >> k;
+	getchar();
 	string str;
-	int num[31];
-	int res[2000];
-
-	while (cin >> str)
-	{
-		for (int i = 0; i < str.size(); i++)
-			num[i] = str[i] - '0';
-		int index = 0;
-		for (int i = 0; i < str.size(); )
-		{
-			int temp = 0, remain = 0;
-			for (int j = i; j < str.size(); j++)
+	getline(cin, str);
+	bool flag = false;
+	string ans = "", cur = "";
+	int cnt = 0, lower = 0, upper = 0;
+	for (int i = 0; i < str.size(); ++i) {
+		if (flag) {
+			if (str[i] != '-')
 			{
-				temp = (remain * 10 + num[j]) % 2;
-				num[j] = (remain * 10 + num[j]) / 2;
-				remain = temp;
+				if (islower(str[i])) {
+					++lower;
+				}
+				if (isupper(str[i])) {
+					++upper;
+				}
+				//                 ans.push_back(str[i]);
+				cur.push_back(str[i]);
+				if (cur.size() == k) {
+					if (lower > upper) {
+						for (int k = 0; k < cur.size(); ++k) {
+							if (isupper(cur[k]))
+								cur[k] = tolower(cur[k]);
+						}
+					}
+					else if (lower < upper) {
+						for (int k = 0; k < cur.size(); ++k) {
+							if (islower(cur[k]))
+							{
+								cur[k] = toupper(cur[k]);
+							}
+						}
+					}
+					lower = upper = 0;
+					ans = ans + '-';
+					ans = ans + cur;
+					cur = "";
+				}
 			}
-			res[index++] = remain;
-			while (num[i] == 0)
-				i++;
 		}
-		for (int i = index - 1; i >= 0; i--)
-			cout << res[i];
-		cout << endl;
+		else {
+			if (str[i] != '-')
+				ans.push_back(str[i]);
+		}
+		if (str[i] == '-')
+			flag = true;
 	}
+	if (cur != "")
+	{
+				if (lower > upper) {
+					for (int k = 0; k < cur.size(); ++k) {
+						if (isupper(cur[k]))
+							cur[k] = tolower(cur[k]);
+					}
+				}
+				else if (lower < upper) {
+					for (int k = 0; k < cur.size(); ++k) {
+						if (islower(cur[k]))
+						{
+							cur[k] = toupper(cur[k]);
+						}
+					}
+				}
+
+		ans = ans + "-" + cur;
+	}
+	cout << ans << endl;
+
 	return 0;
 }

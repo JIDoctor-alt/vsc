@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 public class Message implements Serializable {
 
+    private static final long serialVersionUID = 1L;
+
     private String gender;//发送者
     private String getter;//接受者
     private String content;//消息内容

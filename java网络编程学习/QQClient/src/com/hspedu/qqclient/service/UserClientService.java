@@ -4,7 +4,6 @@ import com.hspedu.qqcommon.Message;
 import com.hspedu.qqcommon.MessageType;
 import com.hspedu.qqcommon.User;
 
-import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.*;
@@ -35,7 +34,7 @@ public class UserClientService {
 
             //读取从服务器回复的Message对象
             ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
-            Message ms = (Message) ois.readObject();
+            Message ms = (Message)ois.readObject();
 
             if(ms.getMesType().equals(MessageType.MESSAGE_LOGIN_SUCCEED)){//登录ok
 

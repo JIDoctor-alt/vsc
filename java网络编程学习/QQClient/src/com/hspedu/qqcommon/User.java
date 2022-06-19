@@ -4,6 +4,9 @@ import java.io.Serializable;
 //表示一个用户、客户信息
 public class User implements Serializable {
 
+
+    private static final long serialVersionUID = 1L;
+
     private String userId;//用户id 、 用户名
     private String passwd;//用户密码
 

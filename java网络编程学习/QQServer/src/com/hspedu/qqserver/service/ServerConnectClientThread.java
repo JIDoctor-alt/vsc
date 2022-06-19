@@ -2,7 +2,7 @@ package com.hspedu.qqserver.service;
 
 import com.hspedu.qqcommon.Message;
 
-import java.io.IOException;
+
 import java.io.ObjectInputStream;
 import java.net.Socket;
 
@@ -23,8 +23,8 @@ public class ServerConnectClientThread extends Thread{
     public void run() {//这里线程处于run的状态，可以发送/接收消息
 
         while(true){
-            System.out.println("服务器和客户端保持通信，读取数据...");
             try {
+                System.out.println("服务器和客户端" +userId+" 保持通信，读取数据...");
                 ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
                 Message message = (Message) ois.readObject();
 //                后面会使用message
